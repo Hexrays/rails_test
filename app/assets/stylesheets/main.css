@@ -4,3 +4,7 @@ body {
 .booties-margin {
 	margin-top: 55px;
 }
+
+#user_name, #user_email {
+	margin: 0;
+}

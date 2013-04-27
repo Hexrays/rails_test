@@ -1,2 +1,9 @@
-<h1>welcome</h1>
-<p>On a scale of 1 to 10 you're <%= @math %>.</p>
+<%= form_for @new_user, :url => { :action => "create" } do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :email %>
+  <%= f.submit "Create New Account", class: "btn btn-primary" %>
+<% end %>
+
+<% @user.each do |u| %>
+	<p><%= u.name %> eats boogers.</p>
+<% end %>
